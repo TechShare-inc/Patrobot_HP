@@ -1,0 +1,2 @@
+PatRobotのHPのサンプルです。
+いずれ、TechShareのHPとマージします。
