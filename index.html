@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatRobot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-light text-center py-3  fixed-top">
+        <h1 class="display-5">
+            <img src="images/logos/Patrobot-logo-colored_fix.png" alt="PatRobot Logo" style="width: 300px; height: auto;">
+        </h1>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#top">Top</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product-overview">ソリューション概要</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#functions">機能紹介</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#process-flow">導入までの流れ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#target-facilities">働ける場所</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#target-robots">働けるロボット</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-environments">環境について</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#models">選べる３つの選択肢</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#case-studies">導入事例</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4" style="padding-top: 150px;">
+        <!-- Image Section -->
+        <div id="top" class="text-center">       
+            <h1 class="p-3">そのテクノロジーをもっと身近に</h1>
+            <section id="image-section" class="image-section text-center text-white py-4 rounded">
+                <img id="slideshow-image" src="" alt="Slideshow Image">
+            </section>
+        </div>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+
+        <!-- Info Sections -->
+        <div id="product-overview">
+            <section id="product-overview1" class="highlight-section mt-4 fade-in-section">
+                <h3 class="text-center mb-4">ソリューション概要</h3>
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <h4 class="p-1"><u>PatRobotとは？</u></h4>
+                        <div class="indented-text">
+                            <strong style="font-size: 1.2em;">3D Field Navigator 「PatRobot」</strong>は、階段や立体交差、複数のフロアを含む複合的な立体経路を4足歩行ロボットや車両型の移動ロボットで自律走行するための3Dの自律走行制御ユニットです。<br>
+                        </div>
+                        <h4 class="mt-1 p-1"><u>なにができるの？</u></h4>
+                        <div class="indented-text">
+                            巡回業務、点検業務、警備などを人に代わって行うことができます。今までのAGVよりもより広く長く、かつ立体的な構造物にも対応できます。
+                        </div>
+                        <h4 class="mt-1 p-1"><u>なにがすごいの？</u></h4>
+                        <div class="indented-text">
+                            TechShare独自開発の3D自己位置推定・ナビゲーションシステム3D HALNA Engineを搭載しているので、通常フラットフロアはもとより、階段、段差、スロープなども自由自在に自動で動き回れます。
+                        </div>
+                        <h4 class="mt-1 p-1"><u>どこで使えるの？</u></h4>
+                        <div class="indented-text">
+                            主に国を支える重要インフラ施設や、ビルなどで活躍できます。ソフトウェアは日本製で、通信もVPNを通しているので安心して使うことができます。
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="intro-video" class="info-section text-center mt-4 fade-in-section p-3">
+                <h3 class="mb-4">紹介動画</h3>
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <video controls width="100%" max-width="600px">
+                            <source src="videos/introduction.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+
+        <div id="functions" class="info-section p-3">
+            <h3 class="text-center fade-in-section mb-4">機能紹介</h3>
+            <!-- Card Grid -->
+            <section  id="3d-movement" class="card-grid row mt-4 fade-in-section">
+                <h4 class="text-center mb-4">３次元立体移動</h4>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body text-center"  style="height: calc(100% - 40px);">  
+                            <img src="gif/up_stairs.gif" alt="up_stairs GIF" style="max-width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body" style="height: calc(100% - 40px);">
+                            <h5>自律走行機能の特徴​</h5>
+                            <ol>
+                                <li class="p-1">
+                                    <strong>フラットフロアでの自律走行機能​</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>階段や立体交差を含む3次元な経路の自律走行ナビゲーション機能</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>エレベータや車両運搬等による別空間移動後の自律走行対応​</strong><br>
+                                    ロボットは頑張って階段を上りますが、それでもロボット本体のスペックを超えた階段は登れません。
+                                </li>
+                            </ol>
+                            <div class="card-body text-center" >  
+                                <img src="images/3dMove.png" alt="3d-movement image" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card Grid -->
+            <section id="obstacle-detection" class="card-grid row mt-4 fade-in-section">
+                <h4 class="text-center mb-4">障害物検知</h4>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body" style="height: calc(100% - 40px);">
+                            <h5>障害物検知による動的な経路生成と停止</h5>
+                            <ol>
+                                <li class="p-1">
+                                    <strong>経路ごとに回避・停止が可能​</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>経路によっては障害物を無視し、経路に忠実に走行することも可能</strong><br>
+                                </li>
+                            </ol>
+                            <div class="card-body text-center">  
+                                <img src="images/Obstacles.png" alt="obstacle png" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body text-center" style="height: calc(100% - 40px);">
+                            <img src="gif/obstacle_detection.gif" alt="Obstacle Detection GIF" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Card Grid -->
+            <section  id="remote-control" class="card-grid row mt-4 fade-in-section">
+                <h4 class="text-center mb-4">遠隔操作</h4>
+                <div class="col-md-6">
+                    <div class="card mb-3"  style="height: 500px;">
+                        <div class="card-body p-1" style="display: flex; align-items: center; justify-content: center; height: 100%;">  
+                            <img src="gif/remote_control.gif" alt="remote_control GIF" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body" style="height: calc(100% - 40px);">
+                            <h5>遠隔地からの操作・コマンドの送信</h5>
+                            <ol>
+                                <li class="p-1">
+                                    <strong>WebRTCを用いた低遅延のコマンドの送信</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>VPNでラッピングしたセキュアな通信</strong><br>
+                                </li>
+                            </ol>
+                            <div class="card-body text-center">  
+                                <img src="images/Mechanism.png" alt="remote_control GIF" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card Grid -->
+            <section id="route-setting" class="card-grid row mt-4 fade-in-section">
+                <h4 class="text-center mb-4">ルート設定</h4>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body" style="height: 500px;">  
+                            <h5>経路設定・安全停止設定</h5> 
+                            <ol>
+                                <li class="p-1">
+                                    <strong>GUIによるさまざまな経路設定方法が利用可能。</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>正確な位置決め指定型・バイパス型・経路記憶型</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>障害物回避経路・停止経路・階段昇降経路</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>特殊アクションポイントの設定（充電・写真撮影・PTZ撮影）</strong><br>
+                                </li>
+                            </ol>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body text-center" style="display: flex; align-items: center; justify-content: center; height: 100%;">  
+                            <img src="gif/3d_route.gif" alt="ptz GIF" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card Grid -->
+            <section  id="ptz-capture" class="card-grid row mt-4 fade-in-section">
+                <h4 class="text-center mb-4">PTZでの撮影</h4>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body text-center" style="display: flex; align-items: center; justify-content: center; height: 100%;">  
+                            <img src="gif/ptz.gif" alt="ptz GIF" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body" style="height: calc(100% - 40px);">
+                            <h5>定点でのPTZ</h5>
+                            <ol>
+                                <li class="p-1">
+                                    <strong>巡回中にチェックしたい場所をPTZで撮影可能</strong><br>
+                                </li>
+                            </ol>
+
+                            <h5 class="p-1">以下の３モデルから選択可能</h5>
+                            <div class="d-flex justify-content-between align-items-center h-100">
+                                <div class="text-center" style="flex: 1; padding: 5px;">
+                                    <p>ZR10(最大30倍ズーム)</p>
+                                    <img src="images/cameras/ZR10_transparent.png" alt="Mechanism Image 1" style="max-width: 100%; height: auto; object-fit: contain;">
+                                </div>
+                                <div class="text-center" style="flex: 1; padding: 5px;">
+                                    <p>ZR30(最大180倍ズーム)</p>
+                                    <img src="images/cameras/HALNA_ZR30_transparent.png" alt="Mechanism Image 2" style="max-width: 100%; height: auto; object-fit: contain;">
+                                </div>
+                                <div class="text-center" style="flex: 1; padding: 5px;">
+                                    <p>ZT6(温度検知機能搭載)</p>
+                                    <img src="images/cameras/HALNA_ZT6_transparent.png" alt="Mechanism Image 3" style="max-width: 100%; height: auto; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card Grid -->
+            <section  id="patrol-function" class="card-grid row mt-4 fade-in-section">
+                <h4 class="text-center mb-4">定期巡回機能</h4>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body" style="height: calc(100% - 40px);">
+                            <h5>​スケジューラー機能搭載</h5>
+                            <ol>
+                                <li class="p-1">
+                                    <strong>巡回する経路を時間ごとに設定可能</strong><br>
+                                </li>
+                                <div class="card-body text-center mt-4">  
+                                    <img src="images/Schedule.png" alt="obstacle png" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                                </div>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3"  style="height: 500px;">
+                        <div class="card-body p-1" style="display: flex; align-items: center; justify-content: center; height: 100%;">  
+                            <img src="gif/schedule.gif" alt="remote_control GIF" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Card Grid -->
+            <section  id="remote-control" class="card-grid row mt-4 fade-in-section">
+                <h4 class="text-center mb-4">直感的なGUI</h4>
+                <div class="col-md-6">
+                    <div class="card mb-3"  style="height: 500px;">
+                        <div class="card-body p-1" style="display: flex; align-items: center; justify-content: center; height: 100%;">  
+                            <img src="gif/gui.gif" alt="remote_control GIF" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3" style="height: 500px;">
+                        <div class="card-body" style="height: calc(100% - 40px);">
+                            <h5>GUIからの操作が簡単</h5>
+                            <ol>
+                                <li class="p-1">
+                                    <strong>自律走行の開始や遠隔操作などを一つの画面で完結</strong><br>
+                                </li>
+                                <li class="p-1">
+                                    <strong>複数のロボットを一つのデバイスから操作可能</strong><br>
+                                </li>
+                            </ol>
+                            <div class="card-body text-center">  
+                                <img src="images/RobotsOnline.png" alt="remote_control GIF" style="max-width: 100%;  height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+
+        <section  id="process-flow" class="diagram-section text-center mt-4 fade-in-section p-3">
+            <h3 class="mb-4">導入までの流れ</h3>
+            <div class="diagram-container">
+                <div class="step-box">コンサルティング</div>
+                <div class="arrow">↓</div>
+                <div class="step-box">現場視察</div>
+                <div class="arrow">↓</div>
+                <div class="step-box">試験導入</div>
+                <div class="arrow">↓</div>
+                <div class="step-box">運用開始</div>
+            </div>
+        </section>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+        <!-- Card Grid -->
+        <section  id="target-facilities" class="card-grid row  text-center mt-4 fade-in-section p-3">
+            <h3 class="mb-4">働ける場所</h3>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5 class="m-2">
+                     化学プラント <br>
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/facilities/chemical_plant.png" alt="chemical_plant png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5 class="m-2">
+                     工場 <br>
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/facilities/factory.png" alt="factory png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5 class="m-2">
+                     製鉄所 <br>
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/facilities/steel_works.png" alt="steel_works png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5 class="m-2">
+                     建設 <br>
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/facilities/construction.png" alt="construction png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5 class="m-2">
+                     浄水場 <br>
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/facilities/water_filter.png" alt="water_filter png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5 class="m-2">
+                     変電所 <br>
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/facilities/electric_factory.png" alt="electric_factory png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+        <!-- Card Grid -->
+        <section  id="target-robots"  class="card-grid row text-center mt-4 fade-in-section p-3">
+            <h3 class="mb-4">働けるロボット</h3>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5>
+                     B2 <br>
+                     (Unitree Robotics)
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/robots/B2.png" alt="B2 png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5>
+                        Go2<br>
+                         (Unitree Robotics)
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/robots/Go2.png" alt="Go2 png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" >
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5>
+                        Scout mini<br> (AgileX Robotics)
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/robots/Scout_mini.png" alt="Scout mini Png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5>
+                        Bunker mini<br> (AgileX Robotics)
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/robots/Bunker_mini.png" alt="Bunker mini Png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5>
+                        Ranger mini<br> (AgileX Robotics)
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/robots/Ranger_mini.png" alt="Ranger mini Png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card mb-3 text-center" style="height: 200px;">
+                    <h5>
+                        Scout 2.0<br> (AgileX Robotics)
+                    </h5>
+                    <div class="card-body text-center" style="height: calc(100% - 40px);"> <!-- Adjust based on heading height -->
+                        <img src="images/robots/Scout 2.0.png" alt="Scout 2.0 Png" style="max-width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+        <!-- Info Sections -->
+         <div id="about-environments" class=" info-section mt-4 fade-in-section p-3">   
+            <h3 class="text-center mb-4">環境について</h3>     
+            <div class="card mt-6 mb-3">
+                <strong class="mt-3 mb-3 p-3" style="font-size: 1.2em;">
+                    現在環境によってはロボットの自律走行がうまくいかない場所があります。<br>
+                    以下の環境に該当する場合は自律走行の精度が低い、もしくは遠隔での制御が難しくなる場合があります。
+                </strong>                    
+                <h4  class="p-3">非推奨環境</h4>
+                    <div class="card-body">
+                        <ol>
+                            <li class="p-1">
+                                <strong>狭い場所</strong><br>
+                                特徴量が取りずらい狭いところを苦手としており、自分の位置を見失うことがあります。
+                            </li>
+                            <li class="p-1">
+                                <strong>特徴点がない広い場所</strong><br>
+                                反対に、だだっ広い原っぱなど、目標になる物体がない広い空間も苦手です。
+                            </li>
+                            <li class="p-1">
+                                <strong>急傾斜の階段がある経路</strong><br>
+                                ロボットは頑張って階段を上りますが、それでもロボット本体のスペックを超えた階段は登れません。
+                            </li>
+                            <li class="p-1">
+                                <strong>広範囲で障害物が多く変動する環境</strong><br>
+                                人が多く通る場所や物の移動が頻繁な環境や、頻繁に風景が変わる場所はSLAMのトラッキングとマッピングの安定性を損ないやすいです。<br>
+                                特に移動する物体が多いと、センサーが誤検出することが増え、精度が低下します。
+                            </li>
+                            <li class="p-1">
+                                <strong>通信環境が弱い場所</strong><br>
+                                自己位置推定には影響はありませんが、遠隔操作などがうまく効かなくなる場合があります。
+                            </li>
+                            <li class="p-1">
+                                <strong>その他ロボットが動くには適していない場所</strong><br>
+                                その他にも相性によってはロボットのセンサーがうまく動作しない、またはアルゴリズムに適していない場所もあります。<br>
+                                今後色々な場所に適応していきますが、今はまだ限定的な場所のみであることをご理解ください。
+                            </li>
+                        </ol>
+                    </div>
+            </div>
+        </div>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+
+        <section  id="models" class="info-section mt-4 fade-in-section p-3">
+            <h3>選べる３つの選択肢</h3>
+            <div class="mt-3 mb-3 p-3" >
+                <strong style="font-size: 1.2em;">
+                    現在提供できるモデルは以下の３つのモデルがあります。<br>
+                    どのモデルを選んでも１年間の無償アップデート、問い合わせは付属しています。
+                </strong>  
+            </div>
+
+ 
+            <div class="card mt-6 mb-3">
+                <h5 class="p-3">フルサポートモデル</h5>
+                <div class="card-body">
+                    <ol>
+                        <li class="p-1">
+                            <strong>サーバーのデプロイ</strong><br>
+                            サーバーをどの端末に入れるか、またサーバーの初期設定や通信環境の整備などを行います。
+                        </li>
+                        <li class="p-1">
+                            <strong>3つまでのマッピング+コースセッティング</strong><br>
+                            実際に走らせる場所のマッピングやそれに適したコースのセッティングを行います。
+                        </li>
+                        <li class="p-1">
+                            <strong>トレーニングチケットの発行</strong><br>
+                            操作するオペレーターへの教育や、使い方をサポートします。(2.5h x10)
+                        </li>
+                        <li class="p-1">
+                            <strong>優先的なトラブルシューティング</strong><br>
+                            プログラムのバグやロボット本体の故障などを優先的に対応します。
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card mt-6 mb-3">
+                <h5 class="p-3">部分サポートモデル</h5>
+                <div class="card-body">
+                    <ol>
+                        <li class="p-1">
+                            <strong>サーバーのデプロイ</strong><br>
+                            サーバーをどの端末に入れるか、またサーバーの初期設定や通信環境の整備などを行います。
+                        </li>
+                        <li class="p-1">
+                            <strong>トレーニングチケットの発行</strong><br>
+                            操作するオペレーターへの教育や、使い方をサポートします。(2.5h x2)
+                        </li>
+                        <li class="p-1">
+                            <strong>トラブルシューティング</strong><br>
+                            プログラムのバグやロボット本体の故障などに対応します。
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card mt-6 mb-3">
+                <h5 class="p-3">買い切りモデル</h5>
+                <div class="card-body">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>注意:</strong> このモデルにはサーバーやGUI、遠隔操作などは付属していません。
+                    </div>
+                    <ol>
+                        <li class="p-1">
+                            <strong>APIの説明</strong><br>
+                            APIの使い方をレクチャーします(2.5h x2)<br>
+                            <a href="https://techshare-inc.github.io/HALNA_API/" target="_blank" rel="noopener noreferrer">
+                                API連携について
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <strong>トラブルシューティング</strong><br>
+                            プログラムのバグやロボット本体の故障などに対応します。
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <div class="mt-4" style="border-bottom: 4px solid #ccc;"></div>
+
+
+        <section  id="case-studies" class="info-section mt-4 fade-in-section p-3">
+            <h3>導入事例</h3>
+            <div class="card mt-6 mb-3">
+                <div class="card-body">
+                    <a href="https://www.youtube.com/watch?v=pQGH3Plrzm8" target="_blank" rel="noopener noreferrer">
+                        大成建設株式会社　四足歩行ロボットの遠隔操作・自律制御による巡回監視システム｢T-InspectionＸ｣ を開発
+                    </a>
+                    <br>
+                </div>
+            </div>
+            <div class="card mt-6 mb-3">
+                <div class="card-body">
+                    月島JFEアクアソリューション株式会社
+                </div>
+            </div>
+            <div class="card mt-6 mb-3">
+                <div class="card-body">
+                    千代田商事株式会社(日本製鉄名古屋製作所)
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-4 fade-in-section">
+        <p>Footer Content</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
